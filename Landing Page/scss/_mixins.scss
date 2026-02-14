@@ -1,0 +1,11 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card-elev($shadowColor: rgba(11,15,26,0.08)) {
+  box-shadow: 0 8px 24px $shadowColor;
+  border-radius: $radius;
+  background: $white;
+}

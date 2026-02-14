@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css_log/main.css">
+</head>
+<body class="page page--login">
+    <div class="phone-frame">
+    <main class="login">
+        <canvas id="dots"></canvas>
+        <div class="login__header">
+            <div class="login__logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 28C21.7322 28 28 21.7322 28 14V4.2C28 3.08609 27.5575 2.0178 26.7699 1.23015C25.9822 0.442499 24.9139 0 23.8 0H14.7V6.1418C14.7 7.5432 14.7854 8.995 15.5204 10.1878C16.0466 11.0426 16.7505 11.7743 17.5844 12.3332C18.4182 12.892 19.3625 13.265 20.3532 13.4267L20.6213 13.4701C20.7319 13.5079 20.8278 13.5793 20.8957 13.6743C20.9637 13.7693 21.0002 13.8832 21.0002 14C21.0002 14.1168 20.9637 14.2307 20.8957 14.3257C20.8278 14.4207 20.7319 14.4921 20.6213 14.5299L20.3532 14.5733C18.9058 14.8098 17.5691 15.4949 16.532 16.532C15.4949 17.5691 14.8098 18.9057 14.5733 20.3532L14.5299 20.6213C14.4922 20.7318 14.4208 20.8278 14.3257 20.8957C14.2307 20.9636 14.1168 21.0002 14 21.0002C13.8832 21.0002 13.7693 20.9636 13.6743 20.8957C13.5793 20.8278 13.5079 20.7318 13.4701 20.6213L13.4267 20.3532C13.2649 19.3625 12.892 18.4182 12.3331 17.5844C11.7743 16.7505 11.0427 16.0466 10.1878 15.5204C8.99503 14.7854 7.54323 14.7 6.14183 14.7H0.0168335C0.382934 22.1067 6.50303 28 14 28Z" fill="white"/>
+                <path d="M0 13.3001H6.1418C7.5432 13.3001 8.995 13.2147 10.1878 12.4797C11.1202 11.9052 11.9051 11.1203 12.4796 10.1879C13.2146 8.99508 13.3 7.54328 13.3 6.14188V8.46032e-05H4.2C3.08609 8.46032e-05 2.0178 0.442583 1.23015 1.23024C0.442499 2.01789 0 3.08618 0 4.20008V13.3001Z" fill="white"/>
+                </svg>
+            </div>
+            <h1 class="login__title">Sign in to your <br> Account</h1>
+            <p class="login__subtitle">Enter your email and password to log in</p>
+        </div> 
+        <div class="login__form-container">
+            <button class="btn btn--google">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" class="btn__icon" />
+                Continue with Google
+            </button>
+
+            <div class="login__divider">
+                <span class="login__divider-text">Or login with</span>
+            </div>
+
+            <form class="login__form" action="https://httpbin.org/post" method="post">
+                <div class="login__input-group">
+                    <input type="email" class="login__input" placeholder="Loisbecket@gmail.com" required />
+                </div>
+                
+                <div class="login__input-group login__input-group--password">
+                    <input type="password" class="login__input" placeholder="••••••" required />
+                    <i class="fa-regular fa-eye "></i>
+                    <i class="fa-regular fa-eye-slash hide"></i>
+                </div>
+                
+                <div class="login__options">
+                    <label class="login__remember">
+                        <input type="checkbox" class="login__checkbox" />
+                         Remember me
+                        </label>
+                        <a href="#" class="login__forgot">Forgot Password ?</a>
+                    </div>
+                    
+                <button type="submit" class="btn btn--primary">Log In</button>
+            </form>
+
+            <p class="login__footer">Don’t have an account? <a href="sign_up.html">Sign Up</a></p>
+            
+            <script src="script.js"></script>
+
+        </div>
+        </div>
+    </main>
+</body>
+</html>

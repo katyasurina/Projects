@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="css_sign/main.css">
+</head>
+<body class="page page--sign">
+    <div class="phone-frame">
+    <main class="sign">
+        <canvas id="dots"></canvas>
+        <div class="sign__header">
+            <h1 class="sign__title">Sign Up</h1>
+            <p class="sign__subtitle">Already have an account?<a href="log_in.html">Log In</a></p>
+        </div> 
+        <div class="sign__form-container">
+
+            <form class="sign__form" action="https://httpbin.org/post" method="post">
+                <div class="sign__row">
+                    <input type="text" placeholder="First name" class="sign__input" required>
+                    <input type="text" placeholder="Last name" class="sign__input" required>
+                </div>
+                
+                <input type="email" placeholder="Loisbecket@gmail.com" class="sign__input" required>
+                <input type="date" class="sign__input" required>
+                <input id="phone" type="tel" placeholder="Phone number" class="sign__input" required>
+                
+                <div class="sign__password">
+                    <input type="password" placeholder="Password" class="sign__input"required>
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-eye-slash hide"></i>
+                 </div>
+                 <button type="submit" class="btn btn--primary">Sign Up</button>
+            </form>
+
+            <div class="sign__divider">
+                <span class="sign__divider-text">Or</span>
+            </div>
+
+            <button class="btn btn--google">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" class="btn__icon" />
+                Sign up with Google
+            </button>
+            
+            <script src="script1.js"></script>
+
+        </div>
+        </div>
+    </main>
+</body>
+</html>

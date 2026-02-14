@@ -1,0 +1,29 @@
+:root {
+
+  --color-bg-top: #084fe8;
+  --color-bg-bottom: #ffffff;
+  --color-primary: #0a59ff;
+  --color-text-title:white;
+  --color-text-main: #1f1f1f;
+  --color-text-secondary: #6b6b6b;
+  --color-border: #e0e0e0;
+  --color-placeholder: #9a9a9a;
+
+  --color-google-bg: #ffffff;
+  --color-google-border: #dcdcdc;
+
+  --font-main: 'Inter', sans-serif;
+
+  --border-radius: 12px;
+  --input-height: 48px;
+  --button-height: 50px;
+  --font-size-title: 35px;
+  --font-size-text: 16px;
+  --font-size-small: 14px;
+
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+}

@@ -1,0 +1,75 @@
+@use 'variables' as *;
+
+
+@mixin button-style($bg-color: $color-yellow, $text-color: $color-white) {
+    background-color: $bg-color;
+    color: $color-white;
+    width:180px;
+    height:53px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: $font-weight-lg;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    @include flex;
+    transition: background-color 0.3s ease;
+
+    &:active {
+        background-color: transparent;
+        color: $color-yellow;
+        border: 2px solid $color-yellow;
+}
+}
+
+@mixin container {
+width: 100%;
+max-width: $container-width;
+margin: 0 auto;
+padding: 0 $spacing;
+}
+
+
+@mixin titles($font-size,$color,$line-height){
+    font-size: $font-size;
+    font-weight: $font-weight-lg;
+    font-family: $font-secondary;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin flex($align: center, $justify: center, $gap: 0) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin text ($font-size, $color){
+    font-family: $font-primary;
+    font-size:$font-size;
+    color: $color;
+    font-weight: $font-weight-sm;
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+
+@mixin mobile {
+  @media (max-width: 768px) and (min-width:475px) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+    @media (min-width: #{$breakpoint-desktop-min}) {
+        @content;
+    }
+}
+
+
