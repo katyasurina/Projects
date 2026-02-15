@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "InterVar";
-  src: local("Inter"), local("Inter var");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-html, body {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  font-size: 16px;
-  color: #0f1724;
-  background: #ffffff;
-}
-
 .header-hero {
   height: 850px;
   position: relative;
@@ -130,9 +116,32 @@ html, body {
   box-sizing: border-box;
   margin: 18px auto 0 auto;
 }
-.hero .hero__field {
-  display: flex;
+.hero .hero__field--location {
   position: relative;
+}
+.hero .hero__field--location .location-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 4px;
+  list-style: none;
+  padding: 0;
+  display: none;
+  z-index: 10;
+}
+.hero .hero__field--location .location-list li {
+  padding: 10px;
+  cursor: pointer;
+  color: #0f1724;
+}
+.hero .hero__field--location .location-list li:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 .hero__input {
   width: 100%;
@@ -145,11 +154,6 @@ html, body {
   padding-left: 40px;
   padding-right: 30px;
   cursor: pointer;
-}
-.hero__input::-moz-placeholder {
-  color: #161C2D;
-  opacity: 1;
-  font-size: 16px;
 }
 .hero__input::placeholder {
   color: #161C2D;
@@ -252,16 +256,14 @@ html, body {
 }
 
 .locations {
-  padding: 64px 0;
   background: #ffffff;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .locations__title {
   text-align: center;
   font-size: 30px;
-  margin-top: 20px;
-  padding: 30px;
 }
 .locations__subtitle {
   text-align: center;
@@ -286,8 +288,7 @@ html, body {
   max-width: 310px;
   height: 420px;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card__img-wrapper {
   overflow: visible;
@@ -352,8 +353,7 @@ html, body {
 }
 .team__img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 420px;
   height: 460px;
   border-radius: 15px;
@@ -653,4 +653,6 @@ html, body {
   font-size: 14px;
   color: #6b7280;
   margin-top: 20px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
