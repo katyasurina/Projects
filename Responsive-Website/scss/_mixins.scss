@@ -3,9 +3,9 @@
 
 @mixin button-style($bg-color: $color-yellow, $text-color: $color-white) {
     background-color: $bg-color;
-    color: $color-white;
-    width:180px;
-    height:53px;
+    color: $text-color;
+    width: 180px;
+    height: 53px;
     border: none;
     cursor: pointer;
     font-size: 15px;
@@ -14,13 +14,11 @@
     font-family: 'Space Mono', monospace;
     text-decoration: none;
     @include flex;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 
     &:active {
-        background-color: transparent;
-        color: $color-yellow;
-        border: 2px solid $color-yellow;
-}
+        transform: translateY(0);
+    }
 }
 
 @mixin container {
